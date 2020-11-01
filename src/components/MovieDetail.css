@@ -1,0 +1,44 @@
+.movie_detail {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+}
+
+.movie_detail {
+  text-align: center;
+}
+
+.movie_detail img {
+  position: relative;
+  max-width: 300px;
+  width: 80%;
+  height: fit-content;
+  margin-right: 60px;
+}
+
+.movie_detail .movie__title {
+  margin-bottom: 5px;
+  font-size: 36px;
+  color: #2c2c2c;
+}
+
+.movie_detail .movie__genres {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  margin: 5px 0px;
+  justify-content: center;
+}
+
+.movie_detail .movie__genres li,
+.movie_detail .movie__year {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.movie_detail .movie__summary {
+  text-align: justify;
+  padding-top: 10px;
+}

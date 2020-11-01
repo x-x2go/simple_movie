@@ -1,4 +1,5 @@
 import React from "react";
+import MovieDetail from "../components/MovieDetail";
 
 class Detail extends React.Component{
     componenetDidMount(){
@@ -7,10 +8,15 @@ class Detail extends React.Component{
             history.push("/");
         }
     }
+
+    showMovieDetail = movie =>{
+        return (<MovieDetail key={movie.id} year={movie.year}title={movie.title} summary={movie.summary} poster={movie.poster} genres={movie.genres}/>)
+    }
+
     render(){
         const {location} = this.props;
         if(location.state){
-            return <span>{location.state.title}</span>;
+            return this.showMovieDetail(location.state);
         }else{
             return null;
         }
